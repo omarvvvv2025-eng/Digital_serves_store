@@ -1,0 +1,14 @@
+name = "digital-store-backend"
+main = "worker.js"
+compatibility_date = "2026-10-01"
+
+# ربط قاعدة بيانات Cloudflare D1 (أدخل database_id الخاص بك بعد إنشائها)
+[[d1_databases]]
+binding = "DB"
+database_name = "digital_store_db"
+database_id = ""
+
+# ربط مساحة تخزين الصور Cloudflare R2
+[[r2_buckets]]
+binding = "PRODUCT_IMAGES"
+bucket_name = "digital-store-images"
